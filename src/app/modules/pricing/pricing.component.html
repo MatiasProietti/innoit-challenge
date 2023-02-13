@@ -1,0 +1,18 @@
+<div class="pricing-container">
+  <div class="header">Pricing Plans</div>
+  <div class="title">Get the Best Option Now</div>
+  <div class="subtitle">
+    The informative, and brief subheading that builds the interest around the created product. The copy encourages user to discover it.
+  </div>
+  <div class="blocks grid grid-nogutter justify-content-center">
+    <div class="col-12 sm:col-5 lg:col-3">
+      <app-pricing-block price="9" [features]="specialBlockFeatures"></app-pricing-block>
+    </div>
+    <div class="col-12 sm:col-5 lg:col-3">
+      <app-pricing-block price="19" [features]="normalBlockFeatures" [popular]="true"></app-pricing-block>
+    </div>
+    <div class="col-12 sm:col-5 lg:col-3">
+      <app-pricing-block price="29" [features]="normalBlockFeatures"></app-pricing-block>
+    </div>
+  </div>
+</div>

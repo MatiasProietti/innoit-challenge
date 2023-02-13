@@ -1,0 +1,29 @@
+<div class="pricing-block-container">
+  <div class="star-icon">
+    <i class="pi pi-star"></i>
+  </div>
+  <div class="header">Option Name</div>
+  <div class="price">${{ price }}/month</div>
+  <div class="subtitle">Good starting point</div>
+
+  <div class="popular-badge" *ngIf="popular">
+    <div class="badge">
+      <span>Most Popular</span>
+    </div>
+  </div>
+
+  <div class="divider">
+    <p-divider></p-divider>
+  </div>
+
+  <div class="feature-list">
+    <div class="list-item" *ngFor="let feature of features">
+      <i [class]="'pi pi-' + feature.icon"></i><span>{{ feature.text }}</span>
+    </div>
+  </div>
+
+  <div class="button">
+    <button pButton label="Get Started" *ngIf="popular"></button>
+    <button pButton label="Get Started" *ngIf="!popular" class="alt-button"></button>
+  </div>
+</div>

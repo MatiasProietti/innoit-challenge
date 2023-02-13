@@ -1,0 +1,44 @@
+.pricing-container {
+  background: #3f4ec4;
+  .header {
+    padding-top: 152px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+
+    text-align: center;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #dee1fd;
+    margin-bottom: 16px;
+  }
+  .title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+
+    text-align: center;
+
+    color: #ffffff;
+    margin-bottom: 16px;
+  }
+  .subtitle {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+
+    text-align: center;
+    letter-spacing: 0.5px;
+
+    color: #dee1fd;
+    margin-bottom: 96px;
+  }
+
+  .blocks {
+    gap: 32px;
+
+    @media (max-width: 575px) {
+      margin-bottom: 32px;
+    }
+  }
+}
