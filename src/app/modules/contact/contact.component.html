@@ -1,0 +1,76 @@
+<div class="contact-container">
+  <div class="image z-0"></div>
+  <div class="contact-form-card z-1">
+    <p class="subtitle">GET IN TOUCH</p>
+    <p class="title">Contact us</p>
+
+    <form [formGroup]="contactFormGroup">
+      <div class="grid">
+        <div class="first-name col-12 sm:col">
+          <p class="input-label">First Name</p>
+          <input type="text" pInputText formControlName="firstName" placeholder="James" />
+        </div>
+
+        <div class="last-name col-12 sm:col">
+          <p class="input-label">Last Name</p>
+          <input type="text" pInputText formControlName="lastName" placeholder="Appleseed" />
+        </div>
+      </div>
+
+      <div class="grid interest block sm:hidden">
+        <p class="interest-title">I am interested in:</p>
+        <div class="col-12">
+          <div class="field-checkbox">
+            <p-checkbox name="group1" value="build" formControlName="build" inputId="build"></p-checkbox>
+            <label for="build">Building a new product</label>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="field-checkbox">
+            <p-checkbox name="group1" value="maintain" formControlName="maintain" inputId="maintain"></p-checkbox>
+            <label for="maintain">Maintaining existing project</label>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="field-checkbox">
+            <p-checkbox name="group1" value="consult" formControlName="consult" inputId="consult"></p-checkbox>
+            <label for="consult">Consulting</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="email col-12 sm:col">
+          <p class="input-label">Email</p>
+          <input type="text" pInputText formControlName="lastName" placeholder="james.appleseed@company.com" />
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="message col-12 hidden sm:inline-block">
+          <p class="input-label">Message</p>
+          <textarea
+            rows="5"
+            cols="30"
+            pInputTextarea
+            [autoResize]="true"
+            placeholder="Leave us a message..."
+            formControlName="message"></textarea>
+        </div>
+        <div class="message col-12 inline-block sm:hidden">
+          <p class="input-label">Message</p>
+          <input type="text" pInputText formControlName="message" placeholder="Leave us a message..." />
+        </div>
+      </div>
+
+      <div class="field-checkbox">
+        <p-checkbox formControlName="termsOfService" [binary]="true" inputId="binary"></p-checkbox>
+        <label for="binary">I agree to <a href="">Terms of Service</a> and <a href="">Privacy Policy</a></label>
+      </div>
+
+      <div class="submit-button">
+        <button pButton label="Send message"></button>
+      </div>
+    </form>
+  </div>
+</div>

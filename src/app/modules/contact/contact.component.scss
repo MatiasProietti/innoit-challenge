@@ -1,0 +1,106 @@
+.contact-container {
+  @media (max-width: 575px) {
+    padding-top: 0;
+  }
+  @media (min-width: 576px) {
+    padding-top: 112px;
+  }
+}
+
+.contact-form-card {
+  box-shadow: 0px 6px 16px -2px #0000000a;
+  box-shadow: 0px 24px 40px -4px #00000014;
+  max-width: 672px;
+  border-radius: 12px;
+  padding: 40px;
+  background-color: white;
+  position: relative;
+
+  @media (max-width: 575px) {
+    margin: 80px 16px;
+  }
+  @media (min-width: 576px) {
+    margin: 0 auto;
+  }
+
+  .subtitle {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+
+    text-align: center;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+
+    color: #6a7682;
+  }
+
+  .title {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 41px;
+    text-align: center;
+    letter-spacing: 0.25px;
+
+    color: #000000;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+  }
+
+  .input-label {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+
+    letter-spacing: 0.5px;
+
+    color: #1b1d21;
+
+    margin-bottom: 4px;
+  }
+
+  .submit-button {
+    button {
+      width: 100%;
+    }
+  }
+
+  .field-checkbox {
+    label,
+    a {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      letter-spacing: 0.25px;
+      color: #1b1d21;
+    }
+  }
+}
+
+.image {
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  background-color: red;
+
+  @media (max-width: 575px) {
+    min-height: 100%;
+  }
+  @media (min-width: 576px) {
+    height: 256px;
+  }
+}
+
+.interest-title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+  letter-spacing: 0.5px;
+
+  color: #1b1d21;
+}
